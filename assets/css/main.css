@@ -2600,10 +2600,10 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/background.jpg");
-		background-position: top left,							right center;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								cover;
+		background-image: url("images/overlay.png"), url("../../images/background.jpg") !important;
+		background-position: top left,							60% 50% !important;
+		background-repeat: repeat,								no-repeat !important;
+		background-size: auto,								cover !important;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -3064,8 +3064,8 @@ input, select, textarea {
 
 			#header {
 				background-attachment: scroll;
-				background-position: top left, right center;
-				background-size: auto,		cover;
+				background-position: top left, 60% 50% !important;
+				background-size: auto,		cover !important;
 				left: auto;
 				padding: 6em 4em;
 				position: relative;
