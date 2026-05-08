@@ -146,5 +146,19 @@
 		window.location.href = `mailto:ttao03@syr.edu?subject=${subject}&body=${body}`;
 	}
 	</script>
+	<script>
+	window.addEventListener("scroll", function () {
+		const header = document.getElementById("header");
+		const doc = document.documentElement;
+
+		const maxScroll = doc.scrollHeight - window.innerHeight;
+		const progress = maxScroll > 0 ? window.scrollY / maxScroll : 0;
+
+		const move = progress * 90;
+
+		header.style.setProperty("--bg-x", "60%");
+		header.style.setProperty("--bg-y", `calc(50% - ${move}px)`);
+	});
+	</script>
 	</body>
 </html>
