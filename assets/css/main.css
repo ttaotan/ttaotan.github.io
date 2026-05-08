@@ -2134,16 +2134,23 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
-		}
+				width: 10em;
+				height: 10em;
+				border-radius: 50%;
+				overflow: hidden;
+			}
 
 			.image.avatar:before {
 				display: none;
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
 				width: 100%;
+				height: 100%;
+  				border-radius: 50%;
+  				object-fit: cover;
+				object-position: center;
+  				display: block;
 			}
 
 /* List */
@@ -2593,10 +2600,10 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
+		background-image: url("images/overlay.png"), url("../../images/background.jpg");
+		background-position: top left,							center center;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-size: auto,								cover;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
@@ -2639,8 +2646,11 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
+			margin: 0 0 1.5em 0;
+  			width: 10em;
+ 			height: 10em;
+  			border-radius: 50%;
+  			overflow: hidden;
 		}
 
 /* Footer */
